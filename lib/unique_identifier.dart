@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 
 class UniqueIdentifier {
@@ -7,7 +6,8 @@ class UniqueIdentifier {
       const MethodChannel('unique_identifier');
 
   static Future<String> get serial async {
-    final String identifier = await _channel.invokeMethod('getUniqueIdentifier');
+    final String identifier =
+        await _channel.invokeMethod('getUniqueIdentifier');
     return identifier;
   }
 }
