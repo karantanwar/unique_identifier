@@ -1,6 +1,6 @@
 name: unique_identifier
 description: A new Flutter plugin for fetching the unique identifier from android and ios.
-version: 0.0.2
+version: 0.0.3
 author: Karan Tanwar <karantanwar.nitd@gmail.com>
 homepage: https://github.com/karantanwar/unique_identifier
 
