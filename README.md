@@ -56,18 +56,6 @@ import 'package:unique_identifier/unique_identifier.dart';
      ),
    );
  }
-FlutterSearchPanel(
-  padding: EdgeInsets.all(10.0),
-  selected: 'a',
-  title: 'Demo Search Page',
-  data: ['This', 'is', 'a', 'test', 'array'],
-  icon: new Icon(Icons.check_circle, color: Colors.white),
-  color: Colors.blue,
-  textStyle: new TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20.0, decorationStyle: TextDecorationStyle.dotted),
-  onChanged: (value) {
-    print(value);
-  },
-),
 ```
 
 ## Bugs & Requests
