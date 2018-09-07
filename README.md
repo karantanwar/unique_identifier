@@ -8,7 +8,7 @@ A Flutter plugin to get the ANDROID_ID for android and identifierForVendor for i
 
 ```yaml
 dependencies:
-  unique_identifier: ^0.0.1
+  unique_identifier: ^0.0.2
 ```
 
 ### Import
