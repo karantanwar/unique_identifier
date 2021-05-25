@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aba7844d-1a29-4c63-958f-efa33c5f8af1" name="Default" comment="fix 1">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="aba7844d-1a29-4c63-958f-efa33c5f8af1" name="Default" comment="readme update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +35,6 @@
         <option value="Dart File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getPlatformVersion</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -153,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621934184973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="readme update">
+      <created>1621934983951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621934983951</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,13 +170,14 @@
     <MESSAGE value="ReadMe Clean up" />
     <MESSAGE value="Version update" />
     <MESSAGE value="fix 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 1" />
+    <MESSAGE value="readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="276" width="800" height="558" key="Vcs.Push.Dialog.v2" timestamp="1621934347624">
+    <state x="555" y="276" width="800" height="558" key="Vcs.Push.Dialog.v2" timestamp="1621934986458">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="276" width="800" height="558" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1621934347624" />
+    <state x="555" y="276" width="800" height="558" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1621934986458" />
     <state x="600" y="342" width="710" height="425" key="git4idea.merge.GitPullDialog" timestamp="1621934339540">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

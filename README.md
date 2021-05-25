@@ -1,6 +1,6 @@
-# Flutter Search Panel
+# Unique Identifier
 
-[![pub package](https://img.shields.io/badge/pub-0.0.3-green.svg)](https://pub.dartlang.org/packages/unique_identifier)
+[![pub package](https://img.shields.io/badge/pub-0.1.0-green.svg)](https://pub.dartlang.org/packages/unique_identifier)
 
 A Flutter plugin to get the ANDROID_ID for android and identifierForVendor for iOS platforms.
 
