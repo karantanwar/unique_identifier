@@ -1,4 +1,4 @@
-# Flutter Search Panel
+# Unique Identifier
 
 [![pub package](https://img.shields.io/badge/pub-0.1.0-green.svg)](https://pub.dartlang.org/packages/unique_identifier)
 
