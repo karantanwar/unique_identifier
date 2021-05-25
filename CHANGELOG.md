@@ -15,3 +15,4 @@
 ## 0.1.0
 
 * Migration to AndroidX
+* ios - podspec update
