@@ -1,0 +1,5 @@
+.dart_tool/package_config.json
+android/.idea
+example/.idea
+example/example.iml
+example/android/example_android.iml
