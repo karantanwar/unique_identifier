@@ -1,13 +1,15 @@
 import 'dart:async';
+
 import 'package:flutter/services.dart';
 
 class UniqueIdentifier {
-  static const MethodChannel _channel =
-      const MethodChannel('unique_identifier');
+  // Define a Method channel with 'unique_identifier' name
+  static const MethodChannel _channel = const MethodChannel('unique_identifier');
 
-  static Future<String> get serial async {
-    final String identifier =
-        await _channel.invokeMethod('getUniqueIdentifier');
+  // Static function for getting the identifier
+  // Returns Future<String?>
+  static Future<String?> get serial async {
+    final String? identifier = await _channel.invokeMethod('getUniqueIdentifier');
     return identifier;
   }
 }
