@@ -16,3 +16,8 @@
 
 * Migration to AndroidX
 * ios - podspec update
+
+## 0.2.0
+
+* Bug fix
+* nullsafety
