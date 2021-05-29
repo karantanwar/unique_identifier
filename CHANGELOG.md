@@ -21,3 +21,7 @@
 
 * Bug fix
 * nullsafety
+
+## 0.2.0
+
+* Version update
