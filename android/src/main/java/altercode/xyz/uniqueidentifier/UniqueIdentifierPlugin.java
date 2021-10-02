@@ -1,27 +1,32 @@
 package altercode.xyz.uniqueidentifier;
 
 import android.content.Context;
-import android.provider.Settings;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 import android.provider.Settings.Secure;
 
+import androidx.annotation.NonNull;
 
-public class UniqueIdentifierPlugin implements MethodCallHandler {
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+
+
+public class UniqueIdentifierPlugin implements FlutterPlugin, MethodCallHandler {
    static private Context context;
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "unique_identifier");
-      context = registrar.context();
-    channel.setMethodCallHandler(new UniqueIdentifierPlugin());
+  private MethodChannel channel;
+
+
+  @Override
+  public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "unique_identifier");
+    context = flutterPluginBinding.getApplicationContext();
+    channel.setMethodCallHandler(this);
   }
 
   @Override
-  public void onMethodCall(MethodCall call, Result result) {
+  public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("getUniqueIdentifier")) {
       String android_id = null;
       if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.CUPCAKE) {
@@ -33,5 +38,15 @@ public class UniqueIdentifierPlugin implements MethodCallHandler {
     } else {
       result.notImplemented();
     }
+
+
   }
+
+  @Override
+  public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
+    channel.setMethodCallHandler(null);
+  }
+
+
+
 }
