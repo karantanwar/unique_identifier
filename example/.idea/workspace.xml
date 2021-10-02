@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22c51b5c-a4a1-4527-a148-903251d9fb78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/src/main/java/altercode/xyz/uniqueidentifier/UniqueIdentifierPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/src/main/java/altercode/xyz/uniqueidentifier/UniqueIdentifierPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unique_identifier_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/unique_identifier_example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/dranzer/.android/avd/Pixel_4a_API_30.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -48,23 +46,5 @@
       <updated>1621948112552</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1486" height="275" key="GridCell.Tab.0.bottom" timestamp="1621948334051">
-      <screen x="1792" y="25" width="2560" height="1415" />
-    </state>
-    <state width="1486" height="275" key="GridCell.Tab.0.bottom/1792.25.2560.1415/0.25.1792.1095@1792.25.2560.1415" timestamp="1621948334051" />
-    <state width="1486" height="275" key="GridCell.Tab.0.center" timestamp="1621948334050">
-      <screen x="1792" y="25" width="2560" height="1415" />
-    </state>
-    <state width="1486" height="275" key="GridCell.Tab.0.center/1792.25.2560.1415/0.25.1792.1095@1792.25.2560.1415" timestamp="1621948334050" />
-    <state width="1486" height="275" key="GridCell.Tab.0.left" timestamp="1621948334049">
-      <screen x="1792" y="25" width="2560" height="1415" />
-    </state>
-    <state width="1486" height="275" key="GridCell.Tab.0.left/1792.25.2560.1415/0.25.1792.1095@1792.25.2560.1415" timestamp="1621948334049" />
-    <state width="1486" height="275" key="GridCell.Tab.0.right" timestamp="1621948334051">
-      <screen x="1792" y="25" width="2560" height="1415" />
-    </state>
-    <state width="1486" height="275" key="GridCell.Tab.0.right/1792.25.2560.1415/0.25.1792.1095@1792.25.2560.1415" timestamp="1621948334051" />
   </component>
 </project>

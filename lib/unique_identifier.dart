@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class UniqueIdentifier {
-  // Define a Method channel with 'unique_identifier' name
+  /// Define a Method channel with 'unique_identifier' name
   static const MethodChannel _channel = const MethodChannel('unique_identifier');
 
   // Static function for getting the identifier
