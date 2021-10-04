@@ -29,3 +29,7 @@
 ## 0.2.1
 
 * Android V2 embedding warning removed
+
+## 0.2.2
+
+* Version update
