@@ -3,3 +3,5 @@ android/.idea
 example/.idea
 example/example.iml
 example/android/example_android.iml
+.packages
+.flutter-plugins-dependencies
