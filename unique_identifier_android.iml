@@ -22,6 +22,7 @@
     </content>
     <content url="file://$MODULE_DIR$/example/android">
       <sourceFolder url="file://$MODULE_DIR$/example/android/app/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
