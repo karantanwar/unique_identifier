@@ -1,15 +1,17 @@
 name: unique_identifier
 description: A new Flutter plugin for fetching the unique identifier from android and ios.
-version: 0.2.2
+version: 0.3.0
 homepage: https://github.com/karantanwar/unique_identifier
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
-  flutter: ">=1.12.0"
+  flutter: '>=1.12.0'
 
 dependencies:
   flutter:
     sdk: flutter
+
+dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:

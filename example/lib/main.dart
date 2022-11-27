@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> initUniqueIdentifierState() async {
     String identifier;
     try {
-      identifier = await UniqueIdentifier.serial;
+      identifier = (await UniqueIdentifier.serial)!;
     } on PlatformException {
       identifier = 'Failed to get Unique Identifier';
     }
