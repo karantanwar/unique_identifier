@@ -33,3 +33,7 @@
 ## 0.2.2
 
 * Version update
+
+## 0.3.0
+
+* fixing flutter lint dependency issue
