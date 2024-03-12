@@ -1,6 +1,11 @@
 package altercode.xyz.uniqueidentifier;
 
 import android.content.Context;
+import android.provider.Settings.Secure;
+import android.telephony.TelephonyManager;
+import android.util.Base64;
+import android.util.Log;
+import android.text.TextUtils;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -28,18 +33,11 @@ public class UniqueIdentifierPlugin implements FlutterPlugin, MethodCallHandler 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("getUniqueIdentifier")) {
-      String android_id = null;
-      if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.CUPCAKE) {
-        android_id = Secure.getString(context.getContentResolver(),
-                Secure.ANDROID_ID);
-      }
-
+      final String android_id = getUniqueDeviceIdentifierAsString();
       result.success(android_id);
     } else {
       result.notImplemented();
     }
-
-
   }
 
   @Override
@@ -47,6 +45,37 @@ public class UniqueIdentifierPlugin implements FlutterPlugin, MethodCallHandler 
     channel.setMethodCallHandler(null);
   }
 
+  private String getUniqueDeviceIdentifierAsString() {
+    // Prioritize privacy-friendly identifiers
+    String androidId = Secure.getString(getContentResolver(), Secure.ANDROID_ID);
+    String hashedAndroidId = (androidId != null) ? hashIdentifier(androidId) : "";
+
+    if (!TextUtils.isEmpty(hashedAndroidId)) {
+        return hashedAndroidId;
+    }
+
+    // Fall back to device-specific identifiers with caution
+    TelephonyManager telephonyManager = (TelephonyManager) getBaseContext().getSystemService(Context.TELEPHONY_SERVICE);
+    String deviceId = telephonyManager != null ? telephonyManager.getDeviceId() : null;
+    String serialNumber = telephonyManager != null ? telephonyManager.getSimSerialNumber() : null;
+
+    if (!TextUtils.isEmpty(deviceId) && !TextUtils.isEmpty(serialNumber)) {
+      UUID deviceUuid = new UUID(deviceId.hashCode(), serialNumber.hashCode());
+      return deviceUuid.toString();
+    }
+
+    return ""; // Return empty string if no suitable identifier is available
+  }
 
 
+  private String hashIdentifier(String identifier) {
+    try {
+      MessageDigest digest = MessageDigest.getInstance("SHA-256");
+      byte[] hashBytes = digest.digest(identifier.getBytes(StandardCharsets.UTF_8));
+      return Base64.encodeToString(hashBytes, Base64.DEFAULT);
+    } catch (NoSuchAlgorithmException e) {
+      Log.e("UniqueIdentifierPlugin", "SHA-256 algorithm not found", e);
+      return "";
+    }
+  }
 }
