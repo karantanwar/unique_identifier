@@ -22,7 +22,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'altercode.xyz.unique_identifier'
+
+    if (project.android.hasProperty("namespace")) {
+        namespace 'altercode.xyz.unique_identifier'
+    }
+
     compileSdkVersion 30
 
     compileOptions {
