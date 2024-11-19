@@ -37,3 +37,7 @@
 ## 0.3.0
 
 * fixing flutter lint dependency issue
+
+## 0.4.0
+
+* Update dart version
