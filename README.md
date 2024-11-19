@@ -1,6 +1,6 @@
 # Unique Identifier
 
-[![pub package](https://img.shields.io/badge/pub-0.3.0-green.svg)](https://pub.dartlang.org/packages/unique_identifier)
+[![pub package](https://img.shields.io/badge/pub-0.4.0-green.svg)](https://pub.dartlang.org/packages/unique_identifier)
 
 A Flutter plugin to get the ANDROID_ID for android and identifierForVendor for iOS platforms.
 
@@ -8,7 +8,7 @@ A Flutter plugin to get the ANDROID_ID for android and identifierForVendor for i
 
 ```yaml
 dependencies:
-  unique_identifier: ^0.3.0
+  unique_identifier: ^0.4.0
 ```
 
 ### Import
