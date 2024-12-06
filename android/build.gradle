@@ -1,5 +1,5 @@
-group 'altercode.xyz.unique_identifier'
-version '1.0'
+group = "altercode.xyz.unique_identifier"
+version = "1.0"
 
 buildscript {
     repositories {
@@ -12,29 +12,44 @@ buildscript {
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
         mavenCentral()
     }
 }
 
-apply plugin: 'com.android.library'
+apply plugin: "com.android.library"
 
 android {
-
     if (project.android.hasProperty("namespace")) {
-        namespace 'altercode.xyz.unique_identifier'
+        namespace = "altercode.xyz.unique_identifier"
     }
 
-    compileSdkVersion 34
+    compileSdk = 34
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     defaultConfig {
-        minSdkVersion 21
+        minSdk = 21
+    }
+
+    dependencies {
+        testImplementation("org.mockito:mockito-core:5.0.0")
+    }
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+
+            testLogging {
+                events "passed", "skipped", "failed", "standardOut", "standardError"
+                outputs.upToDateWhen {false}
+                showStandardStreams = true
+            }
+        }
     }
 }
